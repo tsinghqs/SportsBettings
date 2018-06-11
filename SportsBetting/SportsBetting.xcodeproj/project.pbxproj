@@ -14,6 +14,7 @@
 		25B6353120CC706600C0B13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B6352F20CC706600C0B13D /* LaunchScreen.storyboard */; };
 		25B6353C20CC706600C0B13D /* SportsBettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6353B20CC706600C0B13D /* SportsBettingTests.swift */; };
 		25B6354720CC706600C0B13D /* SportsBettingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6354620CC706600C0B13D /* SportsBettingUITests.swift */; };
+		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		25B6354220CC706600C0B13D /* SportsBettingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsBettingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B6354620CC706600C0B13D /* SportsBettingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsBettingUITests.swift; sourceTree = "<group>"; };
 		25B6354820CC706600C0B13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE56BBF20CE245C00E1859E /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				25B6352D20CC706600C0B13D /* Assets.xcassets */,
 				25B6352F20CC706600C0B13D /* LaunchScreen.storyboard */,
 				25B6353220CC706600C0B13D /* Info.plist */,
+				AAE56BBF20CE245C00E1859E /* Calculator.storyboard */,
 			);
 			path = SportsBetting;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				25B6353120CC706600C0B13D /* LaunchScreen.storyboard in Resources */,
 				25B6352E20CC706600C0B13D /* Assets.xcassets in Resources */,
+				AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */,
 				25B6352C20CC706600C0B13D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
