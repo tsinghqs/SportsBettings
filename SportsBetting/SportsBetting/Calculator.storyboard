@@ -13,9 +13,7 @@
         <!--View Controller-->
         <scene sceneID="vgq-eQ-lOk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SWM-UH-4HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="boc-ms-qMA" userLabel="Exit" sceneMemberID="exit"/>
-                <viewController id="R8N-AW-KfV" customClass="ViewController" customModule="SportsBetting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R8N-AW-KfV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yjq-nn-RZ9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,6 +112,8 @@
                         <outlet property="payout" destination="3K5-Ga-fcz" id="99Y-xj-LID"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWM-UH-4HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="boc-ms-qMA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="149.59999999999999" y="165.06746626686657"/>
         </scene>
