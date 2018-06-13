@@ -15,6 +15,7 @@
 		25B6354720CC706600C0B13D /* SportsBettingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6354620CC706600C0B13D /* SportsBettingUITests.swift */; };
 		9FD8A1BDADB9244E1252F03F /* Pods_SportsBettingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C1CD0E887CEA5FCAAE50DF /* Pods_SportsBettingUITests.framework */; };
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
+		AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */; };
 		ACA1E8013C1DA2ED8A899A57 /* Pods_SportsBettingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199565B0174C0135333E169 /* Pods_SportsBettingTests.framework */; };
 		BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		D71F549C20D0736100C4CD05 /* LogInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */; };
@@ -62,6 +63,7 @@
 		86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsBetting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89134C5B7E0F9E7FC24920B /* Pods-SportsBettingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsBettingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsBettingUITests/Pods-SportsBettingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAE56BBF20CE245C00E1859E /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_ViewController.swift; sourceTree = "<group>"; };
 		BC38DF4A6C1498DB1D8A3572 /* Pods-SportsBettingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsBettingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsBettingTests/Pods-SportsBettingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInSignUp.storyboard; sourceTree = "<group>"; };
 		D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */,
+				AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */,
 				D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */,
 				D71F549F20D08CFC00C4CD05 /* DesignableView.swift */,
 				D71F54A220D0950D00C4CD05 /* LogInViewController.swift */,
@@ -405,6 +408,7 @@
 				25B6352720CC706600C0B13D /* AppDelegate.swift in Sources */,
 				D71F54A320D0950D00C4CD05 /* LogInViewController.swift in Sources */,
 				D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */,
+				AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
