@@ -107,9 +107,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsO-re-hKJ">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsO-re-hKJ">
                                 <rect key="frame" x="123" y="451" width="129" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ljl-d1-DQZ"/>
+                                    <constraint firstAttribute="width" constant="129" id="p8l-6Z-ZoC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -123,8 +126,11 @@
                             <constraint firstItem="v6S-am-DEP" firstAttribute="bottom" secondItem="JgE-de-hhD" secondAttribute="bottom" id="HXF-s5-s97"/>
                             <constraint firstItem="v6S-am-DEP" firstAttribute="bottom" secondItem="JgE-de-hhD" secondAttribute="bottom" id="L5v-lM-lce"/>
                             <constraint firstItem="vn9-KE-hhM" firstAttribute="centerX" secondItem="gau-FX-Fxp" secondAttribute="centerX" id="Nrj-Ws-F3T"/>
+                            <constraint firstItem="JgE-de-hhD" firstAttribute="trailing" secondItem="xsO-re-hKJ" secondAttribute="trailing" constant="123" id="Syo-L4-HoI"/>
                             <constraint firstItem="v6S-am-DEP" firstAttribute="top" secondItem="hHy-Vo-sZr" secondAttribute="top" id="UGy-eG-lM4"/>
+                            <constraint firstItem="xsO-re-hKJ" firstAttribute="leading" secondItem="JgE-de-hhD" secondAttribute="leading" constant="123" id="Vbo-A0-vyK"/>
                             <constraint firstItem="v6S-am-DEP" firstAttribute="leading" secondItem="JgE-de-hhD" secondAttribute="leading" id="XJU-eA-p74"/>
+                            <constraint firstItem="xsO-re-hKJ" firstAttribute="top" secondItem="gau-FX-Fxp" secondAttribute="bottom" constant="8" id="bEv-Uq-xPQ"/>
                             <constraint firstItem="v6S-am-DEP" firstAttribute="trailing" secondItem="JgE-de-hhD" secondAttribute="trailing" id="fOB-q1-uVk"/>
                             <constraint firstItem="v6S-am-DEP" firstAttribute="leading" secondItem="JgE-de-hhD" secondAttribute="leading" id="hg1-TJ-UC3"/>
                             <constraint firstItem="v6S-am-DEP" firstAttribute="trailing" secondItem="JgE-de-hhD" secondAttribute="trailing" id="mKE-Pn-eBG"/>
@@ -264,7 +270,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-0Y-24k">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFC-D4-eSk">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFC-D4-eSk">
                                 <rect key="frame" x="30" y="225" width="315" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
