@@ -10,8 +10,47 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func plusMinus(_ sender: Any) {
+    
+    
+    var plusminus = true
+    var payout = 0.0
+   
+    @IBAction func indexChanged(_ sender: Any) {
+        switch (sender as AnyObject).selectedSegmentIndex
+        {
+        case 0:
+            plusminus = true
+        case 1:
+            plusminus = false
+        default:
+            plusminus = true
+        }
     }
+    
+    
+    @IBOutlet weak var amountText: UITextField!
+    @IBOutlet weak var oddsText: UITextField!
+    @IBOutlet weak var payoutText: UILabel!
+    
+    
+    @IBAction func Calculate(_ sender: Any) {
+        if let odds = Double (oddsText.text!), let amount = Double (amountText.text!) {
+            if plusminus {
+                payout = (amount/odds) * 100 + amount
+                payoutText?.text = String(payout)
+            }
+            else {
+                payout = (amount/100) * odds  + amount
+                payoutText?.text = String(payout)
+            }
+    }
+        else{
+            payoutText.text = "false"
+        }
+        
+    }
+    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
