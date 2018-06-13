@@ -11,9 +11,42 @@ import UIKit
 class Calculator_ViewController: UIViewController {
 
    
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var amountText: UITextField!
     
+    @IBOutlet weak var oddsText: UITextField!
+    var payout=0.0
+    var plusminus = true
     
+    @IBAction func plusminusfunc(_ sender: Any) {
+        switch (sender as AnyObject).selectedSegmentIndex
+        {
+        case 0:
+            plusminus = true
+        case 1:
+            plusminus = false
+        default:
+            plusminus = true
+        }
+    }
     
+    @IBAction func calculatebox(_ sender: Any) {
+        if let odds = Double (oddsText.text!), let amount = Double (amountText.text!) {
+            if plusminus {
+                payout = (amount/odds) * 100 + amount
+                label?.text = String(payout)
+            }
+            else {
+                payout = (amount/100) * odds  + amount
+                label?.text = String(payout)
+            }
+        }
+        else{
+            label.text = "false"
+        }
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

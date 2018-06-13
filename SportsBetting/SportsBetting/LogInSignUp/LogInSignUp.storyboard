@@ -476,9 +476,12 @@
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculatebox:" destination="uJO-oo-9Ye" eventType="touchUpInside" id="2gm-de-usm"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ng4-mJ-s2j">
-                                <rect key="frame" x="30" y="120" width="315" height="140"/>
+                                <rect key="frame" x="30" y="70" width="315" height="188"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyX-xN-T98">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
@@ -529,6 +532,17 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-bE-PDX">
+                                        <rect key="frame" x="0.0" y="160" width="315" height="29"/>
+                                        <segments>
+                                            <segment title="+"/>
+                                            <segment title="-"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.35686274509803922" green="0.61176470588235299" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="plusminus:" destination="uJO-oo-9Ye" eventType="valueChanged" id="QMt-pw-vgM"/>
+                                        </connections>
+                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -550,6 +564,15 @@
                                     <segue destination="OvU-ux-Tmh" kind="show" id="Lpg-5l-wrZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeW-ce-8bl">
+                                <rect key="frame" x="91" y="497" width="192" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mmS-Vk-7Mq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -560,8 +583,11 @@
                             <constraint firstItem="Gm1-vH-Oiw" firstAttribute="top" secondItem="HVh-6n-FSU" secondAttribute="top" id="FXm-xi-XG8"/>
                             <constraint firstItem="117-vp-owv" firstAttribute="trailing" secondItem="Gm1-vH-Oiw" secondAttribute="trailing" id="K5d-M5-I7l"/>
                             <constraint firstItem="06w-xS-HnM" firstAttribute="leading" secondItem="117-vp-owv" secondAttribute="leading" constant="108" id="KCd-Bw-nm1"/>
+                            <constraint firstItem="VeW-ce-8bl" firstAttribute="leading" secondItem="117-vp-owv" secondAttribute="leading" constant="91" id="OYk-vg-mhc"/>
+                            <constraint firstItem="06w-xS-HnM" firstAttribute="top" secondItem="VeW-ce-8bl" secondAttribute="bottom" constant="72" id="Og1-7L-Byh"/>
+                            <constraint firstItem="117-vp-owv" firstAttribute="trailing" secondItem="VeW-ce-8bl" secondAttribute="trailing" constant="92" id="Q1M-CC-fU8"/>
                             <constraint firstItem="117-vp-owv" firstAttribute="trailing" secondItem="Gm1-vH-Oiw" secondAttribute="trailing" id="RGy-uh-oSo"/>
-                            <constraint firstItem="Ng4-mJ-s2j" firstAttribute="top" secondItem="117-vp-owv" secondAttribute="top" constant="100" id="TA2-f3-hWP"/>
+                            <constraint firstItem="Ng4-mJ-s2j" firstAttribute="top" secondItem="117-vp-owv" secondAttribute="top" constant="50" id="TA2-f3-hWP"/>
                             <constraint firstItem="9JV-fY-cqR" firstAttribute="centerY" secondItem="HVh-6n-FSU" secondAttribute="centerY" id="TAv-NJ-P1y"/>
                             <constraint firstItem="Gm1-vH-Oiw" firstAttribute="trailing" secondItem="117-vp-owv" secondAttribute="trailing" id="Yo5-JA-CQw"/>
                             <constraint firstItem="06w-xS-HnM" firstAttribute="width" secondItem="06w-xS-HnM" secondAttribute="height" multiplier="79:27" id="Yrv-RU-jBi"/>
@@ -576,6 +602,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="117-vp-owv"/>
                     </view>
+                    <connections>
+                        <outlet property="amountText" destination="VyX-xN-T98" id="teh-Y3-59b"/>
+                        <outlet property="label" destination="VeW-ce-8bl" id="VhA-J2-mGx"/>
+                        <outlet property="oddsText" destination="O3G-mI-OM2" id="yJH-VG-JNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-a9-egi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
