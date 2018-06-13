@@ -1,0 +1,6 @@
+framework module Pods_SportsBettingTests {
+  umbrella header "Pods-SportsBettingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

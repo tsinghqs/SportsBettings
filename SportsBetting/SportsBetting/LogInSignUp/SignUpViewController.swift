@@ -8,15 +8,31 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var EmailTextFlield: UITextField!
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+        EmailTextFlield.delegate = self
+        UserNameTextField.delegate = self
+        PasswordTextField.delegate = self
+    }
+    // MARK: - Search Method (Dismisses Keyboard on "Done" Press)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        if textField == EmailTextFlield {
+            // Switch focus to other text field
+            UserNameTextField.becomeFirstResponder()
+        }
+        if textField == UserNameTextField {
+            // Switch focus to other text field
+            PasswordTextField.becomeFirstResponder()
+        }
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {

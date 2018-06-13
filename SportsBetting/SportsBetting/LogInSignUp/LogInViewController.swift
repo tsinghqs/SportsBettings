@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var UsernameTextField: UITextField!
@@ -18,8 +18,19 @@ class LogInViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+        UsernameTextField.delegate = self
+        PasswordTextField.delegate = self
+    }
+    // MARK: - Search Method (Dismisses Keyboard on "Done" Press)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        if textField == UsernameTextField {
+            // Switch focus to other text field
+            PasswordTextField.becomeFirstResponder()
+        }
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {

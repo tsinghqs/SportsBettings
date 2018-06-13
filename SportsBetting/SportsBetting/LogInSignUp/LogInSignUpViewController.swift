@@ -21,6 +21,7 @@ class LogInSignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
     /*
     // MARK: - Navigation
@@ -32,4 +33,17 @@ class LogInSignUpViewController: UIViewController {
     }
     */
 
+}
+//MARK: - Dismiss Keyboard
+//put self.hideKeyboardWhenTappedAround() in viewDidLoad function
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

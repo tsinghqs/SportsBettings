@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028DCD2EED42BB3E7F6A9B112AD5E2C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		09ADD01FE80833A61A2D5066AAB8C98D /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */; };
+		0B67E4FF18E4045310ACF97F802E79D1 /* Pods-SportsBettingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C961E10E13B0530351046F9ECE182F68 /* Pods-SportsBettingTests-dummy.m */; };
+		0CAF99CEB82D631D85F5CF618779ECDA /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9202AFD50843698529BC69AA3E623 /* TextFieldEffects-dummy.m */; };
+		1E9364A8544C90DF6AA738F48B4FF857 /* Pods-SportsBettingUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7B974AD931B78B0BAC05A7984268EE /* Pods-SportsBettingUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FD57F6C5659F56EB03AF414CFFB8A5E /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */; };
+		4D98BA1143F70A052B3FE654A4411A64 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */; };
+		523EBA54F8C1933A660276939F1F8F6B /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */; };
+		63CEDED6652828A7ECD53AA7185B0554 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */; };
+		710E2A279C4B8911E5D2FE0CFC988896 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */; };
+		7E196E192ECFABC90EE05394BDFC7678 /* Pods-SportsBettingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 094C631BB768D3EF5341782E2732DE5F /* Pods-SportsBettingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9790F1BC07F004666BCF65A78637E206 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */; };
+		A33BD5F2B1509FF54948F180BC2A1739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A745BAA33767019226B29808E7B6961F /* Pods-SportsBetting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044C0D797AC442C3A9337150D33F178 /* Pods-SportsBetting-dummy.m */; };
+		A95FA3725961C0B62AE9EB31E74F8A30 /* Pods-SportsBetting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B421C1953A714778C3E1B63731900227 /* Pods-SportsBetting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B33302852B03631325E68B936FD7C749 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */; };
+		CE6707A8EDD2FAF8ACC85E158B704145 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ED951F2791925E854531F0FF98E5D8 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D077BDFA891277303F30780E62CFFB92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E7F478CF623CB09C90B0089067881331 /* Pods-SportsBettingUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 227E6859DC94B8FFB16901EA376FA3F0 /* Pods-SportsBettingUITests-dummy.m */; };
+		EB2BC8044CEC9A98EDD3A9889355F972 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */; };
+		EEBDBC3839693E611D1DCA0A76726A4A /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */; };
+		F4F7BB12F8356F5542C8BF4E2EAE4966 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F285A57560663027FCAC5564534C889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651D469312AF870D499834115DFB99CF;
+			remoteInfo = "Pods-SportsBetting";
+		};
+		6A8996F97BE193727E67242BD5869F56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E483809BAC3101E9EBD675DD7618DF;
+			remoteInfo = TextFieldEffects;
+		};
+		F996B4295116739C2B8B327C9626428E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651D469312AF870D499834115DFB99CF;
+			remoteInfo = "Pods-SportsBetting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094C631BB768D3EF5341782E2732DE5F /* Pods-SportsBettingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportsBettingTests-umbrella.h"; sourceTree = "<group>"; };
+		0FF92265811D945AAB39698DA59B393F /* Pods-SportsBettingUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsBettingUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1173D8AF1EEB508DC527755563704735 /* Pods-SportsBettingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsBettingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		17D52E149F79D374A9244E58D93FBB81 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		190DBC24537AC691321DE1DC4B0AD6D9 /* Pods-SportsBettingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsBettingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		227E6859DC94B8FFB16901EA376FA3F0 /* Pods-SportsBettingUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportsBettingUITests-dummy.m"; sourceTree = "<group>"; };
+		2C74053F63036677123A0E0D25C3CF69 /* Pods-SportsBettingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportsBettingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3044C0D797AC442C3A9337150D33F178 /* Pods-SportsBetting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportsBetting-dummy.m"; sourceTree = "<group>"; };
+		33AA2C28E42911C1F2829104CAD7F93B /* Pods-SportsBetting-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsBetting-resources.sh"; sourceTree = "<group>"; };
+		38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		387380939F3D50A49BCF902A2A8F9BB6 /* Pods-SportsBettingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportsBettingTests.modulemap"; sourceTree = "<group>"; };
+		3D87483348D7D887BC5A721C3D6A4ED8 /* Pods-SportsBetting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsBetting.release.xcconfig"; sourceTree = "<group>"; };
+		44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		452DCA780C762136A40EFD1483F98198 /* Pods-SportsBettingTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsBettingTests-resources.sh"; sourceTree = "<group>"; };
+		4DAB7ACD084CC18D4A6B22583130AAA1 /* Pods-SportsBettingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsBettingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		538F8D548FB12415A9FA08A0BEA4460C /* Pods-SportsBettingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsBettingTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B247715274C1A579FB3523EF989A93D /* Pods_SportsBettingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportsBettingUITests.framework; path = "Pods-SportsBettingUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		662D3768E5D7507CA61AF5027D9507A5 /* Pods-SportsBettingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsBettingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		694F0A3CB47BCBDAA77FF3B6DBDFDB54 /* Pods-SportsBetting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportsBetting.modulemap"; sourceTree = "<group>"; };
+		8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		8A7B974AD931B78B0BAC05A7984268EE /* Pods-SportsBettingUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportsBettingUITests-umbrella.h"; sourceTree = "<group>"; };
+		8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		90ED951F2791925E854531F0FF98E5D8 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		915AFE958B467456564B4370BF3BD63B /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C752FC7E57EDD5E5102FFDB2E45F612 /* Pods-SportsBetting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsBetting.debug.xcconfig"; sourceTree = "<group>"; };
+		A36D22A1779D33FEFA962B5E0F4DE584 /* Pods-SportsBettingUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportsBettingUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		A97E7FB8DB9216B91CF13B9CE1816027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D3A84D45FC69009BCF39B4553EDE15 /* Pods-SportsBettingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsBettingTests-frameworks.sh"; sourceTree = "<group>"; };
+		B421C1953A714778C3E1B63731900227 /* Pods-SportsBetting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportsBetting-umbrella.h"; sourceTree = "<group>"; };
+		BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		BE8336A35BE637360986FD15888A851C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCAE794C78A1600FA09ABB0C6A4CD9E /* Pods-SportsBettingUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportsBettingUITests.modulemap"; sourceTree = "<group>"; };
+		C4A9202AFD50843698529BC69AA3E623 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		C53AB4DE7C3DCE424A1ED6AF3D62169F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C961E10E13B0530351046F9ECE182F68 /* Pods-SportsBettingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportsBettingTests-dummy.m"; sourceTree = "<group>"; };
+		CF18170B9D5EC528046A5C4ADD4CACB2 /* Pods-SportsBetting-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsBetting-frameworks.sh"; sourceTree = "<group>"; };
+		DD4B182096C853BC0795E4945576D4A8 /* Pods_SportsBettingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportsBettingTests.framework; path = "Pods-SportsBettingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E226ADBBCA92560506956FE13D5A8CF1 /* Pods-SportsBetting-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsBetting-acknowledgements.plist"; sourceTree = "<group>"; };
+		E264EAF01B77D312B22A2BB11CB1B7CD /* Pods-SportsBetting-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportsBetting-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		E85F7244B97E37FA34DEAC57DCE833B3 /* Pods_SportsBetting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportsBetting.framework; path = "Pods-SportsBetting.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCE05AD2B99AA342A218FED5D0B7F49 /* Pods-SportsBettingUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsBettingUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7FE63B36B8F7FBFA18A51D85187A752 /* Pods-SportsBettingUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsBettingUITests-resources.sh"; sourceTree = "<group>"; };
+		F99F52BE1F774B66A7585D208D641439 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3C674996A56EC169340CF2CBA1B1A0 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E6E1E76B034C44597CB901EFAFE5E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F7BB12F8356F5542C8BF4E2EAE4966 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBBBCC33D7B4719044DF952989AEE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D077BDFA891277303F30780E62CFFB92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62473616015559E63A2DDDF79CB1FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028DCD2EED42BB3E7F6A9B112AD5E2C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85359BF456B5B4A40691CDA1731E993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33BD5F2B1509FF54948F180BC2A1739 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D657A728155DB464FA25C19A83C92A3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF84B79E12CB376D6806099AF0616A58 /* Pods-SportsBetting */,
+				C343C4883566E5EE22AA2A325B34BA2F /* Pods-SportsBettingTests */,
+				4C0F7F3F7774B170AA0588AF70E2DCE9 /* Pods-SportsBettingUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4C0F7F3F7774B170AA0588AF70E2DCE9 /* Pods-SportsBettingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE8336A35BE637360986FD15888A851C /* Info.plist */,
+				BFCAE794C78A1600FA09ABB0C6A4CD9E /* Pods-SportsBettingUITests.modulemap */,
+				A36D22A1779D33FEFA962B5E0F4DE584 /* Pods-SportsBettingUITests-acknowledgements.markdown */,
+				EDCE05AD2B99AA342A218FED5D0B7F49 /* Pods-SportsBettingUITests-acknowledgements.plist */,
+				227E6859DC94B8FFB16901EA376FA3F0 /* Pods-SportsBettingUITests-dummy.m */,
+				0FF92265811D945AAB39698DA59B393F /* Pods-SportsBettingUITests-frameworks.sh */,
+				F7FE63B36B8F7FBFA18A51D85187A752 /* Pods-SportsBettingUITests-resources.sh */,
+				8A7B974AD931B78B0BAC05A7984268EE /* Pods-SportsBettingUITests-umbrella.h */,
+				4DAB7ACD084CC18D4A6B22583130AAA1 /* Pods-SportsBettingUITests.debug.xcconfig */,
+				190DBC24537AC691321DE1DC4B0AD6D9 /* Pods-SportsBettingUITests.release.xcconfig */,
+			);
+			name = "Pods-SportsBettingUITests";
+			path = "Target Support Files/Pods-SportsBettingUITests";
+			sourceTree = "<group>";
+		};
+		55EDCE76AA05D63B893FD4328BFE3F6B /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */,
+				44E1C478C66613314778A9E914076019 /* HoshiTextField.swift */,
+				E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */,
+				4EC4B423B2A9D22E359C9E3CB872549A /* JiroTextField.swift */,
+				38565F6B1DC573225643D9F2A7505D1A /* KaedeTextField.swift */,
+				8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */,
+				9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */,
+				BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */,
+				21059C29D49087D301FA139D8726F631 /* YokoTextField.swift */,
+				86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */,
+				7E3DF9ADA80DDE364AE64E3093E1DC09 /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FB9A7A6FC3D2FEAD2BDF6ABD4DDE0449 /* Pods */,
+				F388CC4B4CE5122B352D03E9FBBB43F7 /* Products */,
+				1D657A728155DB464FA25C19A83C92A3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3DF9ADA80DDE364AE64E3093E1DC09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C53AB4DE7C3DCE424A1ED6AF3D62169F /* Info.plist */,
+				915AFE958B467456564B4370BF3BD63B /* TextFieldEffects.modulemap */,
+				A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */,
+				C4A9202AFD50843698529BC69AA3E623 /* TextFieldEffects-dummy.m */,
+				FF3C674996A56EC169340CF2CBA1B1A0 /* TextFieldEffects-prefix.pch */,
+				90ED951F2791925E854531F0FF98E5D8 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		AF84B79E12CB376D6806099AF0616A58 /* Pods-SportsBetting */ = {
+			isa = PBXGroup;
+			children = (
+				A97E7FB8DB9216B91CF13B9CE1816027 /* Info.plist */,
+				694F0A3CB47BCBDAA77FF3B6DBDFDB54 /* Pods-SportsBetting.modulemap */,
+				E264EAF01B77D312B22A2BB11CB1B7CD /* Pods-SportsBetting-acknowledgements.markdown */,
+				E226ADBBCA92560506956FE13D5A8CF1 /* Pods-SportsBetting-acknowledgements.plist */,
+				3044C0D797AC442C3A9337150D33F178 /* Pods-SportsBetting-dummy.m */,
+				CF18170B9D5EC528046A5C4ADD4CACB2 /* Pods-SportsBetting-frameworks.sh */,
+				33AA2C28E42911C1F2829104CAD7F93B /* Pods-SportsBetting-resources.sh */,
+				B421C1953A714778C3E1B63731900227 /* Pods-SportsBetting-umbrella.h */,
+				9C752FC7E57EDD5E5102FFDB2E45F612 /* Pods-SportsBetting.debug.xcconfig */,
+				3D87483348D7D887BC5A721C3D6A4ED8 /* Pods-SportsBetting.release.xcconfig */,
+			);
+			name = "Pods-SportsBetting";
+			path = "Target Support Files/Pods-SportsBetting";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C343C4883566E5EE22AA2A325B34BA2F /* Pods-SportsBettingTests */ = {
+			isa = PBXGroup;
+			children = (
+				F99F52BE1F774B66A7585D208D641439 /* Info.plist */,
+				387380939F3D50A49BCF902A2A8F9BB6 /* Pods-SportsBettingTests.modulemap */,
+				2C74053F63036677123A0E0D25C3CF69 /* Pods-SportsBettingTests-acknowledgements.markdown */,
+				1173D8AF1EEB508DC527755563704735 /* Pods-SportsBettingTests-acknowledgements.plist */,
+				C961E10E13B0530351046F9ECE182F68 /* Pods-SportsBettingTests-dummy.m */,
+				B1D3A84D45FC69009BCF39B4553EDE15 /* Pods-SportsBettingTests-frameworks.sh */,
+				452DCA780C762136A40EFD1483F98198 /* Pods-SportsBettingTests-resources.sh */,
+				094C631BB768D3EF5341782E2732DE5F /* Pods-SportsBettingTests-umbrella.h */,
+				662D3768E5D7507CA61AF5027D9507A5 /* Pods-SportsBettingTests.debug.xcconfig */,
+				538F8D548FB12415A9FA08A0BEA4460C /* Pods-SportsBettingTests.release.xcconfig */,
+			);
+			name = "Pods-SportsBettingTests";
+			path = "Target Support Files/Pods-SportsBettingTests";
+			sourceTree = "<group>";
+		};
+		F388CC4B4CE5122B352D03E9FBBB43F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E85F7244B97E37FA34DEAC57DCE833B3 /* Pods_SportsBetting.framework */,
+				DD4B182096C853BC0795E4945576D4A8 /* Pods_SportsBettingTests.framework */,
+				5B247715274C1A579FB3523EF989A93D /* Pods_SportsBettingUITests.framework */,
+				17D52E149F79D374A9244E58D93FBB81 /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB9A7A6FC3D2FEAD2BDF6ABD4DDE0449 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EDCE76AA05D63B893FD4328BFE3F6B /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		154A1B9D4792D0901B36BC25D7BF8A5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95FA3725961C0B62AE9EB31E74F8A30 /* Pods-SportsBetting-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DC783ABD8F56288148771683C377E60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9364A8544C90DF6AA738F48B4FF857 /* Pods-SportsBettingUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882F862149CBC9F13B581773519BAC5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6707A8EDD2FAF8ACC85E158B704145 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E74D10D91BF1F2B246542B038104D85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E196E192ECFABC90EE05394BDFC7678 /* Pods-SportsBettingTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10E483809BAC3101E9EBD675DD7618DF /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CD4E7CEF0F467E4D6A7C63A4C452ECA /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				A486F643109452498D37C4A4B2178466 /* Sources */,
+				0E6E1E76B034C44597CB901EFAFE5E2A /* Frameworks */,
+				882F862149CBC9F13B581773519BAC5E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 17D52E149F79D374A9244E58D93FBB81 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		651D469312AF870D499834115DFB99CF /* Pods-SportsBetting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3010A34B776FF793D422C3A40B459 /* Build configuration list for PBXNativeTarget "Pods-SportsBetting" */;
+			buildPhases = (
+				BA233C86997188F7BD6D9C93199BA4C3 /* Sources */,
+				4CBBBCC33D7B4719044DF952989AEE11 /* Frameworks */,
+				154A1B9D4792D0901B36BC25D7BF8A5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E39BEA826B8045C58A33FE7A5FDF696 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportsBetting";
+			productName = "Pods-SportsBetting";
+			productReference = E85F7244B97E37FA34DEAC57DCE833B3 /* Pods_SportsBetting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F43B2D4B9B55213C22470876992207E /* Pods-SportsBettingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0138D6436A08A7C0535887EEA11E853A /* Build configuration list for PBXNativeTarget "Pods-SportsBettingTests" */;
+			buildPhases = (
+				E46DF8EC399D08946787C779EE557E9B /* Sources */,
+				D62473616015559E63A2DDDF79CB1FEB /* Frameworks */,
+				8E74D10D91BF1F2B246542B038104D85 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5F8808569A61FA4AFE658F45BAB6644 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportsBettingTests";
+			productName = "Pods-SportsBettingTests";
+			productReference = DD4B182096C853BC0795E4945576D4A8 /* Pods_SportsBettingTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD8BB8F0B4D2C474997701E5EE456023 /* Pods-SportsBettingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD28769F4B23CDD6FD430AAD38D2F4D /* Build configuration list for PBXNativeTarget "Pods-SportsBettingUITests" */;
+			buildPhases = (
+				139268C10E376932A146D412748AF788 /* Sources */,
+				D85359BF456B5B4A40691CDA1731E993 /* Frameworks */,
+				1DC783ABD8F56288148771683C377E60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66E89D7D48944A7143CE8FEBA7A12DB1 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportsBettingUITests";
+			productName = "Pods-SportsBettingUITests";
+			productReference = 5B247715274C1A579FB3523EF989A93D /* Pods_SportsBettingUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F388CC4B4CE5122B352D03E9FBBB43F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				651D469312AF870D499834115DFB99CF /* Pods-SportsBetting */,
+				8F43B2D4B9B55213C22470876992207E /* Pods-SportsBettingTests */,
+				AD8BB8F0B4D2C474997701E5EE456023 /* Pods-SportsBettingUITests */,
+				10E483809BAC3101E9EBD675DD7618DF /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		139268C10E376932A146D412748AF788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F478CF623CB09C90B0089067881331 /* Pods-SportsBettingUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A486F643109452498D37C4A4B2178466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710E2A279C4B8911E5D2FE0CFC988896 /* AkiraTextField.swift in Sources */,
+				B33302852B03631325E68B936FD7C749 /* HoshiTextField.swift in Sources */,
+				4D98BA1143F70A052B3FE654A4411A64 /* IsaoTextField.swift in Sources */,
+				63CEDED6652828A7ECD53AA7185B0554 /* JiroTextField.swift in Sources */,
+				9790F1BC07F004666BCF65A78637E206 /* KaedeTextField.swift in Sources */,
+				523EBA54F8C1933A660276939F1F8F6B /* MadokaTextField.swift in Sources */,
+				EB2BC8044CEC9A98EDD3A9889355F972 /* MinoruTextField.swift in Sources */,
+				0CAF99CEB82D631D85F5CF618779ECDA /* TextFieldEffects-dummy.m in Sources */,
+				EEBDBC3839693E611D1DCA0A76726A4A /* TextFieldEffects.swift in Sources */,
+				09ADD01FE80833A61A2D5066AAB8C98D /* YokoTextField.swift in Sources */,
+				2FD57F6C5659F56EB03AF414CFFB8A5E /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA233C86997188F7BD6D9C93199BA4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A745BAA33767019226B29808E7B6961F /* Pods-SportsBetting-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46DF8EC399D08946787C779EE557E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B67E4FF18E4045310ACF97F802E79D1 /* Pods-SportsBettingTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E39BEA826B8045C58A33FE7A5FDF696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 10E483809BAC3101E9EBD675DD7618DF /* TextFieldEffects */;
+			targetProxy = 6A8996F97BE193727E67242BD5869F56 /* PBXContainerItemProxy */;
+		};
+		66E89D7D48944A7143CE8FEBA7A12DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SportsBetting";
+			target = 651D469312AF870D499834115DFB99CF /* Pods-SportsBetting */;
+			targetProxy = F996B4295116739C2B8B327C9626428E /* PBXContainerItemProxy */;
+		};
+		F5F8808569A61FA4AFE658F45BAB6644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SportsBetting";
+			target = 651D469312AF870D499834115DFB99CF /* Pods-SportsBetting */;
+			targetProxy = 3F285A57560663027FCAC5564534C889 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11FFE2095666777FA0E083BD0D9318BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D87483348D7D887BC5A721C3D6A4ED8 /* Pods-SportsBetting.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsBetting/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsBetting/Pods-SportsBetting.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1E79CA04FDAB13BAD5D5EFE515DA5102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C752FC7E57EDD5E5102FFDB2E45F612 /* Pods-SportsBetting.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsBetting/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsBetting/Pods-SportsBetting.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56375188D19C5FC5184DA1029B2972A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DAB7ACD084CC18D4A6B22583130AAA1 /* Pods-SportsBettingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsBettingUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsBettingUITests/Pods-SportsBettingUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65730C624C1F68789BA2CF2F2A17A5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662D3768E5D7507CA61AF5027D9507A5 /* Pods-SportsBettingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsBettingTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsBettingTests/Pods-SportsBettingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8819F84F13AB08FAE55C05B5F711C650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A84FDA713E242C8B90DE55ADCE1DDF2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190DBC24537AC691321DE1DC4B0AD6D9 /* Pods-SportsBettingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsBettingUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsBettingUITests/Pods-SportsBettingUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF2BA0A5FAFC427EA1DCB981D4E714BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77C5D4C08AAF31C8F7A4710D38BC849 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA86B049F79F2D194CA4605019E7AF01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538F8D548FB12415A9FA08A0BEA4460C /* Pods-SportsBettingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsBettingTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsBettingTests/Pods-SportsBettingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0138D6436A08A7C0535887EEA11E853A /* Build configuration list for PBXNativeTarget "Pods-SportsBettingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65730C624C1F68789BA2CF2F2A17A5A1 /* Debug */,
+				EA86B049F79F2D194CA4605019E7AF01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CD4E7CEF0F467E4D6A7C63A4C452ECA /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8819F84F13AB08FAE55C05B5F711C650 /* Debug */,
+				BF2BA0A5FAFC427EA1DCB981D4E714BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3010A34B776FF793D422C3A40B459 /* Build configuration list for PBXNativeTarget "Pods-SportsBetting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E79CA04FDAB13BAD5D5EFE515DA5102 /* Debug */,
+				11FFE2095666777FA0E083BD0D9318BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD28769F4B23CDD6FD430AAD38D2F4D /* Build configuration list for PBXNativeTarget "Pods-SportsBettingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56375188D19C5FC5184DA1029B2972A2 /* Debug */,
+				A84FDA713E242C8B90DE55ADCE1DDF2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
