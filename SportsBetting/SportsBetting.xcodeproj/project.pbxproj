@@ -15,7 +15,11 @@
 		25B6353C20CC706600C0B13D /* SportsBettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6353B20CC706600C0B13D /* SportsBettingTests.swift */; };
 		25B6354720CC706600C0B13D /* SportsBettingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6354620CC706600C0B13D /* SportsBettingUITests.swift */; };
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
-		D71F549C20D0736100C4CD05 /* LoginRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F549B20D0736100C4CD05 /* LoginRegistration.storyboard */; };
+		D71F549C20D0736100C4CD05 /* LogInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */; };
+		D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */; };
+		D71F54A020D08CFC00C4CD05 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549F20D08CFC00C4CD05 /* DesignableView.swift */; };
+		D71F54A320D0950D00C4CD05 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F54A220D0950D00C4CD05 /* LogInViewController.swift */; };
+		D71F54A520D0951800C4CD05 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F54A420D0951800C4CD05 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +54,11 @@
 		25B6354620CC706600C0B13D /* SportsBettingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsBettingUITests.swift; sourceTree = "<group>"; };
 		25B6354820CC706600C0B13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE56BBF20CE245C00E1859E /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
-		D71F549B20D0736100C4CD05 /* LoginRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginRegistration.storyboard; sourceTree = "<group>"; };
+		D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInSignUp.storyboard; sourceTree = "<group>"; };
+		D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
+		D71F549F20D08CFC00C4CD05 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		D71F54A220D0950D00C4CD05 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D71F54A420D0951800C4CD05 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		25B6352520CC706600C0B13D /* SportsBetting */ = {
 			isa = PBXGroup;
 			children = (
+				D71F54A120D0949A00C4CD05 /* LogInSignUp */,
 				25B6352620CC706600C0B13D /* AppDelegate.swift */,
 				25B6352820CC706600C0B13D /* ViewController.swift */,
 				25B6352A20CC706600C0B13D /* Main.storyboard */,
@@ -108,7 +117,6 @@
 				25B6352F20CC706600C0B13D /* LaunchScreen.storyboard */,
 				25B6353220CC706600C0B13D /* Info.plist */,
 				AAE56BBF20CE245C00E1859E /* Calculator.storyboard */,
-				D71F549B20D0736100C4CD05 /* LoginRegistration.storyboard */,
 			);
 			path = SportsBetting;
 			sourceTree = "<group>";
@@ -129,6 +137,18 @@
 				25B6354820CC706600C0B13D /* Info.plist */,
 			);
 			path = SportsBettingUITests;
+			sourceTree = "<group>";
+		};
+		D71F54A120D0949A00C4CD05 /* LogInSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */,
+				D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */,
+				D71F549F20D08CFC00C4CD05 /* DesignableView.swift */,
+				D71F54A220D0950D00C4CD05 /* LogInViewController.swift */,
+				D71F54A420D0951800C4CD05 /* SignUpViewController.swift */,
+			);
+			path = LogInSignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +258,7 @@
 				25B6353120CC706600C0B13D /* LaunchScreen.storyboard in Resources */,
 				25B6352E20CC706600C0B13D /* Assets.xcassets in Resources */,
 				AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */,
-				D71F549C20D0736100C4CD05 /* LoginRegistration.storyboard in Resources */,
+				D71F549C20D0736100C4CD05 /* LogInSignUp.storyboard in Resources */,
 				25B6352C20CC706600C0B13D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71F54A520D0951800C4CD05 /* SignUpViewController.swift in Sources */,
+				D71F54A020D08CFC00C4CD05 /* DesignableView.swift in Sources */,
 				25B6352920CC706600C0B13D /* ViewController.swift in Sources */,
 				25B6352720CC706600C0B13D /* AppDelegate.swift in Sources */,
+				D71F54A320D0950D00C4CD05 /* LogInViewController.swift in Sources */,
+				D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
