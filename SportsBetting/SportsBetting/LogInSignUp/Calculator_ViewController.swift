@@ -40,11 +40,11 @@ class Calculator_ViewController: UIViewController {
         if let odds = Double (oddsText.text!), let amount = Double (amountText.text!) {
             if plusminus {
                 payout = (amount/odds) * 100 + amount
-                label?.text = "Payout " + convertDoubletoCurrency(amount: payout)
+                label?.text = "Payout: " + convertDoubletoCurrency(amount: payout)
             }
             else {
                 payout = (amount/100) * odds  + amount
-                label?.text = "Payout $" + String(payout)
+                label?.text = "Payout: " + convertDoubletoCurrency(amount: payout)
             }
         }
         else{
