@@ -10,6 +10,10 @@ import UIKit
 
 class Calculator_ViewController: UIViewController {
 
+  
+    
+    @IBOutlet weak var payoutTextLabel: UILabel!
+    
     func convertDoubletoCurrency(amount: Double) ->String{
         let numberformatter = NumberFormatter()
         numberformatter.numberStyle = .currency
@@ -19,6 +23,7 @@ class Calculator_ViewController: UIViewController {
     }
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var amountText: UITextField!
+   
     
     @IBOutlet weak var oddsText: UITextField!
     var payout=0.0
@@ -40,11 +45,14 @@ class Calculator_ViewController: UIViewController {
         if let odds = Double (oddsText.text!), let amount = Double (amountText.text!) {
             if plusminus {
                 payout = (amount/odds) * 100 + amount
-                label?.text = "Payout: " + convertDoubletoCurrency(amount: payout)
+                payoutTextLabel.text = "Payout"
+                label?.text = convertDoubletoCurrency(amount: payout)
+                
             }
             else {
+               payoutTextLabel.text = "Payout"
                 payout = (amount/100) * odds  + amount
-                label?.text = "Payout: " + convertDoubletoCurrency(amount: payout)
+                label?.text = convertDoubletoCurrency(amount: payout)
             }
         }
         else{
@@ -56,7 +64,7 @@ class Calculator_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        payoutTextLabel.text = ""
         // Do any additional setup after loading the view.
     }
 
