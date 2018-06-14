@@ -403,7 +403,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="LogInButton:" destination="OvU-ux-Tmh" eventType="touchUpInside" id="d7D-l9-FgM"/>
-                                    <segue destination="uJO-oo-9Ye" kind="show" id="Ya3-xh-Dmn"/>
+                                    <segue destination="9kf-8D-vKC" kind="show" id="muq-Bd-k6U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyR-Gw-gfN">
@@ -561,7 +561,7 @@
                                     <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OvU-ux-Tmh" kind="show" id="Lpg-5l-wrZ"/>
+                                    <segue destination="LRx-pb-pUQ" kind="show" id="Nsl-Iz-BUe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeW-ce-8bl">
@@ -610,14 +610,200 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCz-a9-egi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="-502.39880059970017"/>
+            <point key="canvasLocation" x="3292" y="-502"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="15M-37-5gF">
+            <objects>
+                <viewController id="oEn-Du-nZc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qjx-uz-0LP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgFifa" translatesAutoresizingMaskIntoConstraints="NO" id="lxi-tX-VhP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-7T-Esh">
+                                <rect key="frame" x="70.5" y="50" width="234" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="aeh-fx-U1U"/>
+                                    <constraint firstAttribute="height" constant="87" id="nho-sw-EeL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="63"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lxi-tX-VhP" secondAttribute="trailing" id="EgY-RK-pnB"/>
+                            <constraint firstAttribute="bottom" secondItem="lxi-tX-VhP" secondAttribute="bottom" id="K1u-qc-TFx"/>
+                            <constraint firstItem="lxi-tX-VhP" firstAttribute="leading" secondItem="z2t-Fl-9X4" secondAttribute="leading" id="SOk-7Y-MrO"/>
+                            <constraint firstItem="HIu-7T-Esh" firstAttribute="centerX" secondItem="lxi-tX-VhP" secondAttribute="centerX" id="bhg-FA-zND"/>
+                            <constraint firstItem="HIu-7T-Esh" firstAttribute="top" secondItem="z2t-Fl-9X4" secondAttribute="top" constant="30" id="jfE-7F-KaD"/>
+                            <constraint firstItem="lxi-tX-VhP" firstAttribute="top" secondItem="Qjx-uz-0LP" secondAttribute="top" id="zMQ-yn-Uzy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z2t-Fl-9X4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="compass" id="Q6A-ja-ifW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLM-sq-7Tn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223" y="231"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="1Dl-ns-wPg">
+            <objects>
+                <viewController id="EjW-Od-7WV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lk3-bn-uYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="OddBall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLf-UY-BXM">
+                                <rect key="frame" x="70" y="20" width="234" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="VgZ-68-rYo"/>
+                                    <constraint firstAttribute="width" constant="234" id="w6L-np-xVD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="63"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgFifa" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-RD-aIV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMI-2R-TIk">
+                                <rect key="frame" x="70" y="50" width="234" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="fjW-D2-GoP"/>
+                                    <constraint firstAttribute="height" constant="87" id="qeY-HA-l6v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="63"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JNa-RD-aIV" secondAttribute="bottom" id="8a3-Q1-NZn"/>
+                            <constraint firstItem="JNa-RD-aIV" firstAttribute="leading" secondItem="lk3-bn-uYZ" secondAttribute="leading" id="CXL-V6-riS"/>
+                            <constraint firstItem="vMI-2R-TIk" firstAttribute="leading" secondItem="tLf-UY-BXM" secondAttribute="leading" id="FNX-YH-RMF"/>
+                            <constraint firstItem="vMI-2R-TIk" firstAttribute="top" secondItem="bIQ-kx-5No" secondAttribute="top" constant="30" id="UkJ-cE-Bjr"/>
+                            <constraint firstItem="bIQ-kx-5No" firstAttribute="trailing" secondItem="JNa-RD-aIV" secondAttribute="trailing" id="fFa-uS-17T"/>
+                            <constraint firstItem="JNa-RD-aIV" firstAttribute="top" secondItem="lk3-bn-uYZ" secondAttribute="top" id="iFx-Qa-5hs"/>
+                            <constraint firstItem="vMI-2R-TIk" firstAttribute="centerX" secondItem="JNa-RD-aIV" secondAttribute="centerX" id="tjt-hD-1Kc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bIQ-kx-5No"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user" selectedImage="user" id="P0f-Ip-evP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4AM-6Y-Azv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.5999999999999" y="-1307.4962518740631"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="arw-Lw-lSS">
+            <objects>
+                <viewController id="LRx-pb-pUQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7mh-Gv-Bno">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgFifa" translatesAutoresizingMaskIntoConstraints="NO" id="FSP-6K-lBG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyu-mU-wjn" customClass="DesignableButton" customModule="SportsBetting" customModuleProvider="target">
+                                <rect key="frame" x="36" y="303" width="302" height="60"/>
+                                <color key="backgroundColor" red="0.36248505390000002" green="0.61284292090000003" blue="0.64039552209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="D0L-4b-rUy"/>
+                                    <constraint firstAttribute="width" secondItem="cyu-mU-wjn" secondAttribute="height" multiplier="151:30" id="HY2-Db-xP4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="h7S-gW-x6A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Use Calculator">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="LogInButton:" destination="OvU-ux-Tmh" eventType="touchUpInside" id="ZBZ-uW-Qp6"/>
+                                    <segue destination="uJO-oo-9Ye" kind="show" id="Jgd-SN-3LD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHU-Fk-UhA">
+                                <rect key="frame" x="70" y="50" width="234" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="Jpg-xe-VL6"/>
+                                    <constraint firstAttribute="height" constant="87" id="bqd-c4-1tP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="63"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FSP-6K-lBG" firstAttribute="top" secondItem="7mh-Gv-Bno" secondAttribute="top" id="2nW-4z-sSw"/>
+                            <constraint firstItem="cyu-mU-wjn" firstAttribute="centerY" secondItem="7mh-Gv-Bno" secondAttribute="centerY" id="Azf-w6-klM"/>
+                            <constraint firstItem="cyu-mU-wjn" firstAttribute="width" secondItem="cyu-mU-wjn" secondAttribute="height" multiplier="151:30" id="Hql-Qe-trg"/>
+                            <constraint firstItem="FSP-6K-lBG" firstAttribute="leading" secondItem="7mh-Gv-Bno" secondAttribute="leading" id="JNg-XP-aRZ"/>
+                            <constraint firstItem="cyu-mU-wjn" firstAttribute="centerX" secondItem="7mh-Gv-Bno" secondAttribute="centerX" id="V8i-RZ-4Pl"/>
+                            <constraint firstItem="xsV-Or-D2A" firstAttribute="trailing" secondItem="FSP-6K-lBG" secondAttribute="trailing" id="bLq-a0-za6"/>
+                            <constraint firstAttribute="bottom" secondItem="FSP-6K-lBG" secondAttribute="bottom" id="eSv-qb-7nO"/>
+                            <constraint firstItem="yHU-Fk-UhA" firstAttribute="centerX" secondItem="cyu-mU-wjn" secondAttribute="centerX" id="eb4-SM-u5z"/>
+                            <constraint firstItem="yHU-Fk-UhA" firstAttribute="top" secondItem="xsV-Or-D2A" secondAttribute="top" constant="30" id="yhs-nQ-zpC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xsV-Or-D2A"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="77K-3V-CFb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKH-TM-dsn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.5999999999999" y="-502.39880059970017"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pdn-zG-at5">
+            <objects>
+                <tabBarController id="9kf-8D-vKC" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FdO-pV-dXA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.6470588235294118" green="0.34901960784313724" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LRx-pb-pUQ" kind="relationship" relationship="viewControllers" id="cDN-hn-8Ht"/>
+                        <segue destination="oEn-Du-nZc" kind="relationship" relationship="viewControllers" id="Eff-GD-tfs"/>
+                        <segue destination="EjW-Od-7WV" kind="relationship" relationship="viewControllers" id="GZB-Pj-pAZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xc2-Fc-QuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="-502"/>
         </scene>
     </scenes>
     <resources>
         <image name="bgFifa" width="3200" height="5120"/>
+        <image name="compass" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
+        <image name="user" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lpg-5l-wrZ"/>
+        <segue reference="cDN-hn-8Ht"/>
         <segue reference="e2v-B9-ms5"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -27,11 +27,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4D3-Oz-HUg">
-                                            <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="T1m-kD-ciS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4D3-Oz-HUg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T1m-kD-ciS">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </view>
                                             <vibrancyEffect>
@@ -39,14 +38,19 @@
                                             </vibrancyEffect>
                                         </visualEffectView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="4D3-Oz-HUg" secondAttribute="bottom" id="5Xj-aP-V8Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="4D3-Oz-HUg" secondAttribute="trailing" id="fwo-lf-Nua"/>
+                                        <constraint firstItem="4D3-Oz-HUg" firstAttribute="top" secondItem="bUa-KA-U8v" secondAttribute="top" id="jMY-90-IzJ"/>
+                                        <constraint firstItem="4D3-Oz-HUg" firstAttribute="leading" secondItem="bUa-KA-U8v" secondAttribute="leading" id="oJd-Fw-7m6"/>
+                                    </constraints>
                                 </view>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ODDBALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sm-IQ-Ubr">
-                                <rect key="frame" x="117" y="299" width="141" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ODDBALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sm-IQ-Ubr">
+                                <rect key="frame" x="109.5" y="312.5" width="156" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
@@ -54,14 +58,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZPH-sn-yOX" secondAttribute="trailing" id="4Wo-av-oUk"/>
+                            <constraint firstItem="9Sm-IQ-Ubr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="603-vh-Xge"/>
                             <constraint firstItem="ZPH-sn-yOX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8xl-pI-BVJ"/>
-                            <constraint firstItem="0kI-I0-el4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HSg-rQ-2AG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kI-I0-el4" secondAttribute="trailing" id="N1L-YV-P1g"/>
                             <constraint firstItem="ZPH-sn-yOX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RR4-CW-0eN"/>
                             <constraint firstItem="0kI-I0-el4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aSQ-iE-rbD"/>
+                            <constraint firstItem="9Sm-IQ-Ubr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="akv-7P-yw8"/>
                             <constraint firstItem="0kI-I0-el4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bcP-xE-Egq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0kI-I0-el4" secondAttribute="bottom" id="c12-OW-th0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZPH-sn-yOX" secondAttribute="bottom" id="tLc-bz-fUg"/>
+                            <constraint firstItem="0kI-I0-el4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tNs-8r-6Q3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
