@@ -18,7 +18,7 @@ class LogInSignUpViewController: UIViewController {
         view.addSubview(loginButton)
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional etup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
