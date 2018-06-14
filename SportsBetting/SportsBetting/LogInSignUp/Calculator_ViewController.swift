@@ -10,7 +10,13 @@ import UIKit
 
 class Calculator_ViewController: UIViewController {
 
-   
+    func convertDoubletoCurrency(amount: Double) ->String{
+        let numberformatter = NumberFormatter()
+        numberformatter.numberStyle = .currency
+        numberformatter.locale = Locale.current
+    
+        return numberformatter.string(from: NSNumber(value:amount))!
+    }
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var amountText: UITextField!
     
@@ -34,11 +40,11 @@ class Calculator_ViewController: UIViewController {
         if let odds = Double (oddsText.text!), let amount = Double (amountText.text!) {
             if plusminus {
                 payout = (amount/odds) * 100 + amount
-                label?.text = String(payout)
+                label?.text = "Payout " + convertDoubletoCurrency(amount: payout)
             }
             else {
                 payout = (amount/100) * odds  + amount
-                label?.text = String(payout)
+                label?.text = "Payout $" + String(payout)
             }
         }
         else{
