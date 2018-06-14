@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068DCAED0F886E054E548458 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		25B6352720CC706600C0B13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6352620CC706600C0B13D /* AppDelegate.swift */; };
 		25B6352920CC706600C0B13D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6352820CC706600C0B13D /* ViewController.swift */; };
 		25B6352E20CC706600C0B13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B6352D20CC706600C0B13D /* Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
 		AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */; };
 		ACA1E8013C1DA2ED8A899A57 /* Pods_SportsBettingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199565B0174C0135333E169 /* Pods_SportsBettingTests.framework */; };
-		BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		D71F549C20D0736100C4CD05 /* LogInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */; };
 		D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */; };
 		D71F54A020D08CFC00C4CD05 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549F20D08CFC00C4CD05 /* DesignableView.swift */; };
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */,
+				068DCAED0F886E054E548458 /* Pods_SportsBetting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				DEVELOPMENT_TEAM = QHK3FYD7ZZ;
 				INFOPLIST_FILE = SportsBetting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -598,7 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				DEVELOPMENT_TEAM = QHK3FYD7ZZ;
 				INFOPLIST_FILE = SportsBetting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -8,9 +8,36 @@
 
 import UIKit
 
+//  AppDelegate.m
+//import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    /**
+    (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+    didFinishLaunchingWithOptions:launchOptions];
+    // Add any custom logic here.
+    return YES;
+    }
+    
+    (BOOL)application:(UIApplication *)application
+    openURL:(NSURL *)url
+    options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+    openURL:url
+    sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+    annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+    ];
+    // Add any custom logic here.
+    return handled;
+    }
+ **/
     var window: UIWindow?
 
 
