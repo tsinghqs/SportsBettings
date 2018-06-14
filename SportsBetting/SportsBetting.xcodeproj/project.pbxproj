@@ -17,11 +17,8 @@
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
 		AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */; };
 		ACA1E8013C1DA2ED8A899A57 /* Pods_SportsBettingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199565B0174C0135333E169 /* Pods_SportsBettingTests.framework */; };
-<<<<<<< HEAD
-=======
 		BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		D717A7F420D2EB0F0081A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D717A7F320D2EB0D0081A260 /* Assets.xcassets */; };
->>>>>>> 839ee72f028533414bb2869e4eec3243ba89f9a0
 		D71F549C20D0736100C4CD05 /* LogInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */; };
 		D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */; };
 		D71F54A020D08CFC00C4CD05 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549F20D08CFC00C4CD05 /* DesignableView.swift */; };
