@@ -15,6 +15,13 @@ class LogInSignUpViewController: UIViewController {
         let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         loginButton.center = view.center
         
+        loginButton.frame = CGRect(x:50,
+                                   y:460,
+                                   width:280,
+                                   height:50)
+        
+        loginButton.layer.cornerRadius = 30
+        
         view.addSubview(loginButton)
         super.viewDidLoad()
 
