@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068DCAED0F886E054E548458 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		25B6352720CC706600C0B13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6352620CC706600C0B13D /* AppDelegate.swift */; };
 		25B6352920CC706600C0B13D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6352820CC706600C0B13D /* ViewController.swift */; };
 		25B6353120CC706600C0B13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B6352F20CC706600C0B13D /* LaunchScreen.storyboard */; };
@@ -16,7 +17,6 @@
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
 		AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */; };
 		ACA1E8013C1DA2ED8A899A57 /* Pods_SportsBettingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199565B0174C0135333E169 /* Pods_SportsBettingTests.framework */; };
-		BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		D717A7F420D2EB0F0081A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D717A7F320D2EB0D0081A260 /* Assets.xcassets */; };
 		D717A7F620D2F04F0081A260 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717A7F520D2F04F0081A260 /* ExploreViewController.swift */; };
 		D717A7F820D2F2590081A260 /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717A7F720D2F2590081A260 /* WorldCup.swift */; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */,
+				068DCAED0F886E054E548458 /* Pods_SportsBetting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,10 +375,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SportsBetting/Pods-SportsBetting-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,7 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				DEVELOPMENT_TEAM = QHK3FYD7ZZ;
 				INFOPLIST_FILE = SportsBetting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,7 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				DEVELOPMENT_TEAM = QHK3FYD7ZZ;
 				INFOPLIST_FILE = SportsBetting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
