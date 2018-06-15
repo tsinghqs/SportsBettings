@@ -845,11 +845,7 @@
         <image name="user" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="gJU-mw-rkw"/>
-=======
-        <segue reference="Nsl-Iz-BUe"/>
->>>>>>> c630d906c17354a9e7aabc415b7672aa01c7220b
-        <segue reference="e2v-B9-ms5"/>
+        <segue reference="eT9-lD-E6H"/>
     </inferredMetricsTieBreakers>
 </document>
