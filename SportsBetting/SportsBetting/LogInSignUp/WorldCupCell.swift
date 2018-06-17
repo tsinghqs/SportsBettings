@@ -9,8 +9,8 @@
 import UIKit
 
 class WorldCupCell: UITableViewCell {
-
-    @IBOutlet weak var TeamLabel: UILabel!
+    
+    @IBOutlet weak var TeamsLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

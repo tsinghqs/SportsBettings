@@ -194,8 +194,8 @@
 				D71F54A220D0950D00C4CD05 /* LogInViewController.swift */,
 				D71F54A420D0951800C4CD05 /* SignUpViewController.swift */,
 				D717A7F520D2F04F0081A260 /* ExploreViewController.swift */,
-				D717A7F720D2F2590081A260 /* WorldCup.swift */,
 				D717A7F920D3271E0081A260 /* WorldCupCell.swift */,
+				D717A7F720D2F2590081A260 /* WorldCup.swift */,
 			);
 			path = LogInSignUp;
 			sourceTree = "<group>";

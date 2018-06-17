@@ -9,48 +9,39 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ExploreViewController: UIViewController{
     
-    var WorldCupMatches = [WorldCupElement]()
+    final let url = URL(string: "http://worldcup.sfg.io/matches")
     
-    @IBOutlet weak var WorldCupTableView: UITableView!
+    var LocalWorldCupArray = [WorldCupElement]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        downloadJSON {
-            self.WorldCupTableView.reloadData()
-        }
-        
-        WorldCupTableView.delegate = self
-        WorldCupTableView.dataSource = self
-        
+        downloadJson()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return WorldCupMatches.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "WorldCupCell") as? WorldCupCell else { return UITableViewCell() }
+    func downloadJson() {
         
-        cell.TeamLabel.text = WorldCupMatches[indexPath.row].homeTeam.country + " vs. " + WorldCupMatches[indexPath.row].awayTeam.country
+        guard let downloadURL = url else { return }
         
-        return cell
-    }
-    
-    func downloadJSON(completed: @escaping () -> ()) {
-        let url = URL(string: "http://worldcup.sfg.io/matches")
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if error == nil {
-                do {
-                    self.WorldCupMatches = try JSONDecoder().decode([WorldCupElement].self, from: data!)
-                    
-                    DispatchQueue.main.async {
-                        completed()
-                    }
-                    
-                } catch {
-                    print("JSON Error")
-                }
+        URLSession.shared.dataTask(with: downloadURL) { data, urlResponse, error in
+            guard let data = data, error == nil, urlResponse != nil else {
+                print("Something went wrong with downloading JSON")
+                return
+            }
+            print("downloaded")
+            do {
+                let decoder = JSONDecoder()
+                let DownloadedWorldCupData = try decoder.decode([WorldCupElement].self, from: data)
+                self.LocalWorldCupArray = DownloadedWorldCupData
+                print(self.LocalWorldCupArray[0].awayTeam.country)
+            } catch {
+                print("Something went wrong after downloading JSON")
             }
         }.resume()
     }
+    
 }
+
+
+
