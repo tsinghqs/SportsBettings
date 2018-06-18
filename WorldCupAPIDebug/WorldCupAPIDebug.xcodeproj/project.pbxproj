@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D717C0FB20D723390005F32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C0FA20D723390005F32E /* AppDelegate.swift */; };
+		D717C0FD20D723390005F32E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C0FC20D723390005F32E /* ViewController.swift */; };
+		D717C10020D723390005F32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D717C0FE20D723390005F32E /* Main.storyboard */; };
+		D717C10320D723390005F32E /* WorldCupAPIDebug.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D717C10120D723390005F32E /* WorldCupAPIDebug.xcdatamodeld */; };
+		D717C10520D7233A0005F32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D717C10420D7233A0005F32E /* Assets.xcassets */; };
+		D717C10820D7233A0005F32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D717C10620D7233A0005F32E /* LaunchScreen.storyboard */; };
+		D717C11320D7233A0005F32E /* WorldCupAPIDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C11220D7233A0005F32E /* WorldCupAPIDebugTests.swift */; };
+		D717C11E20D7233B0005F32E /* WorldCupAPIDebugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C11D20D7233B0005F32E /* WorldCupAPIDebugUITests.swift */; };
+		D717C12C20D723B50005F32E /* WorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C12B20D723B50005F32E /* WorldCupTableViewCell.swift */; };
+		D717C13620D72DE80005F32E /* Home_team_events.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C13120D72DE80005F32E /* Home_team_events.swift */; };
+		D717C13720D72DE80005F32E /* Home_team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C13220D72DE80005F32E /* Home_team.swift */; };
+		D717C13820D72DE80005F32E /* Away_team_events.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C13320D72DE80005F32E /* Away_team_events.swift */; };
+		D717C13920D72DE80005F32E /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C13420D72DE80005F32E /* Json4Swift_Base.swift */; };
+		D717C13A20D72DE80005F32E /* Away_team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717C13520D72DE80005F32E /* Away_team.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D717C10F20D7233A0005F32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D717C0EF20D723390005F32E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D717C0F620D723390005F32E;
+			remoteInfo = WorldCupAPIDebug;
+		};
+		D717C11A20D7233B0005F32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D717C0EF20D723390005F32E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D717C0F620D723390005F32E;
+			remoteInfo = WorldCupAPIDebug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D717C0F720D723390005F32E /* WorldCupAPIDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldCupAPIDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D717C0FA20D723390005F32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D717C0FC20D723390005F32E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D717C0FF20D723390005F32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D717C10220D723390005F32E /* WorldCupAPIDebug.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldCupAPIDebug.xcdatamodel; sourceTree = "<group>"; };
+		D717C10420D7233A0005F32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D717C10720D7233A0005F32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D717C10920D7233A0005F32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D717C10E20D7233A0005F32E /* WorldCupAPIDebugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCupAPIDebugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D717C11220D7233A0005F32E /* WorldCupAPIDebugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupAPIDebugTests.swift; sourceTree = "<group>"; };
+		D717C11420D7233A0005F32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D717C11920D7233B0005F32E /* WorldCupAPIDebugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldCupAPIDebugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D717C11D20D7233B0005F32E /* WorldCupAPIDebugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupAPIDebugUITests.swift; sourceTree = "<group>"; };
+		D717C11F20D7233B0005F32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D717C12B20D723B50005F32E /* WorldCupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupTableViewCell.swift; sourceTree = "<group>"; };
+		D717C13120D72DE80005F32E /* Home_team_events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home_team_events.swift; sourceTree = "<group>"; };
+		D717C13220D72DE80005F32E /* Home_team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home_team.swift; sourceTree = "<group>"; };
+		D717C13320D72DE80005F32E /* Away_team_events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Away_team_events.swift; sourceTree = "<group>"; };
+		D717C13420D72DE80005F32E /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		D717C13520D72DE80005F32E /* Away_team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Away_team.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D717C0F420D723390005F32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D717C10B20D7233A0005F32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D717C11620D7233B0005F32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D717C0EE20D723390005F32E = {
+			isa = PBXGroup;
+			children = (
+				D717C0F920D723390005F32E /* WorldCupAPIDebug */,
+				D717C11120D7233A0005F32E /* WorldCupAPIDebugTests */,
+				D717C11C20D7233B0005F32E /* WorldCupAPIDebugUITests */,
+				D717C0F820D723390005F32E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D717C0F820D723390005F32E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D717C0F720D723390005F32E /* WorldCupAPIDebug.app */,
+				D717C10E20D7233A0005F32E /* WorldCupAPIDebugTests.xctest */,
+				D717C11920D7233B0005F32E /* WorldCupAPIDebugUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D717C0F920D723390005F32E /* WorldCupAPIDebug */ = {
+			isa = PBXGroup;
+			children = (
+				D717C0FA20D723390005F32E /* AppDelegate.swift */,
+				D717C0FC20D723390005F32E /* ViewController.swift */,
+				D717C0FE20D723390005F32E /* Main.storyboard */,
+				D717C10420D7233A0005F32E /* Assets.xcassets */,
+				D717C10620D7233A0005F32E /* LaunchScreen.storyboard */,
+				D717C10920D7233A0005F32E /* Info.plist */,
+				D717C10120D723390005F32E /* WorldCupAPIDebug.xcdatamodeld */,
+				D717C12B20D723B50005F32E /* WorldCupTableViewCell.swift */,
+				D717C13320D72DE80005F32E /* Away_team_events.swift */,
+				D717C13520D72DE80005F32E /* Away_team.swift */,
+				D717C13120D72DE80005F32E /* Home_team_events.swift */,
+				D717C13220D72DE80005F32E /* Home_team.swift */,
+				D717C13420D72DE80005F32E /* Json4Swift_Base.swift */,
+			);
+			path = WorldCupAPIDebug;
+			sourceTree = "<group>";
+		};
+		D717C11120D7233A0005F32E /* WorldCupAPIDebugTests */ = {
+			isa = PBXGroup;
+			children = (
+				D717C11220D7233A0005F32E /* WorldCupAPIDebugTests.swift */,
+				D717C11420D7233A0005F32E /* Info.plist */,
+			);
+			path = WorldCupAPIDebugTests;
+			sourceTree = "<group>";
+		};
+		D717C11C20D7233B0005F32E /* WorldCupAPIDebugUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D717C11D20D7233B0005F32E /* WorldCupAPIDebugUITests.swift */,
+				D717C11F20D7233B0005F32E /* Info.plist */,
+			);
+			path = WorldCupAPIDebugUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D717C0F620D723390005F32E /* WorldCupAPIDebug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D717C12220D7233B0005F32E /* Build configuration list for PBXNativeTarget "WorldCupAPIDebug" */;
+			buildPhases = (
+				D717C0F320D723390005F32E /* Sources */,
+				D717C0F420D723390005F32E /* Frameworks */,
+				D717C0F520D723390005F32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldCupAPIDebug;
+			productName = WorldCupAPIDebug;
+			productReference = D717C0F720D723390005F32E /* WorldCupAPIDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D717C10D20D7233A0005F32E /* WorldCupAPIDebugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D717C12520D7233B0005F32E /* Build configuration list for PBXNativeTarget "WorldCupAPIDebugTests" */;
+			buildPhases = (
+				D717C10A20D7233A0005F32E /* Sources */,
+				D717C10B20D7233A0005F32E /* Frameworks */,
+				D717C10C20D7233A0005F32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D717C11020D7233A0005F32E /* PBXTargetDependency */,
+			);
+			name = WorldCupAPIDebugTests;
+			productName = WorldCupAPIDebugTests;
+			productReference = D717C10E20D7233A0005F32E /* WorldCupAPIDebugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D717C11820D7233B0005F32E /* WorldCupAPIDebugUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D717C12820D7233B0005F32E /* Build configuration list for PBXNativeTarget "WorldCupAPIDebugUITests" */;
+			buildPhases = (
+				D717C11520D7233B0005F32E /* Sources */,
+				D717C11620D7233B0005F32E /* Frameworks */,
+				D717C11720D7233B0005F32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D717C11B20D7233B0005F32E /* PBXTargetDependency */,
+			);
+			name = WorldCupAPIDebugUITests;
+			productName = WorldCupAPIDebugUITests;
+			productReference = D717C11920D7233B0005F32E /* WorldCupAPIDebugUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D717C0EF20D723390005F32E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Deval Parikh";
+				TargetAttributes = {
+					D717C0F620D723390005F32E = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					D717C10D20D7233A0005F32E = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D717C0F620D723390005F32E;
+					};
+					D717C11820D7233B0005F32E = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = D717C0F620D723390005F32E;
+					};
+				};
+			};
+			buildConfigurationList = D717C0F220D723390005F32E /* Build configuration list for PBXProject "WorldCupAPIDebug" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D717C0EE20D723390005F32E;
+			productRefGroup = D717C0F820D723390005F32E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D717C0F620D723390005F32E /* WorldCupAPIDebug */,
+				D717C10D20D7233A0005F32E /* WorldCupAPIDebugTests */,
+				D717C11820D7233B0005F32E /* WorldCupAPIDebugUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D717C0F520D723390005F32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D717C10820D7233A0005F32E /* LaunchScreen.storyboard in Resources */,
+				D717C10520D7233A0005F32E /* Assets.xcassets in Resources */,
+				D717C10020D723390005F32E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D717C10C20D7233A0005F32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D717C11720D7233B0005F32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D717C0F320D723390005F32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D717C13A20D72DE80005F32E /* Away_team.swift in Sources */,
+				D717C10320D723390005F32E /* WorldCupAPIDebug.xcdatamodeld in Sources */,
+				D717C13620D72DE80005F32E /* Home_team_events.swift in Sources */,
+				D717C13820D72DE80005F32E /* Away_team_events.swift in Sources */,
+				D717C12C20D723B50005F32E /* WorldCupTableViewCell.swift in Sources */,
+				D717C0FD20D723390005F32E /* ViewController.swift in Sources */,
+				D717C13920D72DE80005F32E /* Json4Swift_Base.swift in Sources */,
+				D717C0FB20D723390005F32E /* AppDelegate.swift in Sources */,
+				D717C13720D72DE80005F32E /* Home_team.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D717C10A20D7233A0005F32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D717C11320D7233A0005F32E /* WorldCupAPIDebugTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D717C11520D7233B0005F32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D717C11E20D7233B0005F32E /* WorldCupAPIDebugUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D717C11020D7233A0005F32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D717C0F620D723390005F32E /* WorldCupAPIDebug */;
+			targetProxy = D717C10F20D7233A0005F32E /* PBXContainerItemProxy */;
+		};
+		D717C11B20D7233B0005F32E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D717C0F620D723390005F32E /* WorldCupAPIDebug */;
+			targetProxy = D717C11A20D7233B0005F32E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D717C0FE20D723390005F32E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D717C0FF20D723390005F32E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D717C10620D7233A0005F32E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D717C10720D7233A0005F32E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D717C12020D7233B0005F32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D717C12120D7233B0005F32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D717C12320D7233B0005F32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				INFOPLIST_FILE = WorldCupAPIDebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devalparikh.apps.WorldCupAPIDebug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D717C12420D7233B0005F32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				INFOPLIST_FILE = WorldCupAPIDebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devalparikh.apps.WorldCupAPIDebug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D717C12620D7233B0005F32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				INFOPLIST_FILE = WorldCupAPIDebugTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devalparikh.apps.WorldCupAPIDebugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldCupAPIDebug.app/WorldCupAPIDebug";
+			};
+			name = Debug;
+		};
+		D717C12720D7233B0005F32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				INFOPLIST_FILE = WorldCupAPIDebugTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devalparikh.apps.WorldCupAPIDebugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldCupAPIDebug.app/WorldCupAPIDebug";
+			};
+			name = Release;
+		};
+		D717C12920D7233B0005F32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				INFOPLIST_FILE = WorldCupAPIDebugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devalparikh.apps.WorldCupAPIDebugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldCupAPIDebug;
+			};
+			name = Debug;
+		};
+		D717C12A20D7233B0005F32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM8H5T7XNA;
+				INFOPLIST_FILE = WorldCupAPIDebugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devalparikh.apps.WorldCupAPIDebugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldCupAPIDebug;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D717C0F220D723390005F32E /* Build configuration list for PBXProject "WorldCupAPIDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D717C12020D7233B0005F32E /* Debug */,
+				D717C12120D7233B0005F32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D717C12220D7233B0005F32E /* Build configuration list for PBXNativeTarget "WorldCupAPIDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D717C12320D7233B0005F32E /* Debug */,
+				D717C12420D7233B0005F32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D717C12520D7233B0005F32E /* Build configuration list for PBXNativeTarget "WorldCupAPIDebugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D717C12620D7233B0005F32E /* Debug */,
+				D717C12720D7233B0005F32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D717C12820D7233B0005F32E /* Build configuration list for PBXNativeTarget "WorldCupAPIDebugUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D717C12920D7233B0005F32E /* Debug */,
+				D717C12A20D7233B0005F32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D717C10120D723390005F32E /* WorldCupAPIDebug.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D717C10220D723390005F32E /* WorldCupAPIDebug.xcdatamodel */,
+			);
+			currentVersion = D717C10220D723390005F32E /* WorldCupAPIDebug.xcdatamodel */;
+			path = WorldCupAPIDebug.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D717C0EF20D723390005F32E /* Project object */;
+}
