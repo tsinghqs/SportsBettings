@@ -9,7 +9,9 @@ target 'SportsBetting' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
-  pod 'AWSMobileClient', '~> 2.6.13'
+  pod 'AWSMobileClient'
+  pod 'AWSUserPoolsSignIn'
+  pod 'AWSAuthUI'
   # Pods for SportsBetting
   pod 'TextFieldEffects'
 

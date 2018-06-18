@@ -14,6 +14,7 @@
 		25B6353C20CC706600C0B13D /* SportsBettingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6353B20CC706600C0B13D /* SportsBettingTests.swift */; };
 		25B6354720CC706600C0B13D /* SportsBettingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B6354620CC706600C0B13D /* SportsBettingUITests.swift */; };
 		9FD8A1BDADB9244E1252F03F /* Pods_SportsBettingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C1CD0E887CEA5FCAAE50DF /* Pods_SportsBettingUITests.framework */; };
+		AA5F778620D851BF0076CABB /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = AA5F778520D851BF0076CABB /* awsconfiguration.json */; };
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
 		AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */; };
 		ACA1E8013C1DA2ED8A899A57 /* Pods_SportsBettingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199565B0174C0135333E169 /* Pods_SportsBettingTests.framework */; };
@@ -64,6 +65,7 @@
 		7F3D48EFD31F3C02992F50FC /* Pods-SportsBetting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsBetting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsBetting/Pods-SportsBetting.debug.xcconfig"; sourceTree = "<group>"; };
 		86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsBetting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89134C5B7E0F9E7FC24920B /* Pods-SportsBettingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsBettingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsBettingUITests/Pods-SportsBettingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5F778520D851BF0076CABB /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../../../../sohamdessai/Downloads/awsconfiguration.json; sourceTree = "<group>"; };
 		AAE56BBF20CE245C00E1859E /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_ViewController.swift; sourceTree = "<group>"; };
 		BC38DF4A6C1498DB1D8A3572 /* Pods-SportsBettingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsBettingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsBettingTests/Pods-SportsBettingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				25B6352F20CC706600C0B13D /* LaunchScreen.storyboard */,
 				D717A7F320D2EB0D0081A260 /* Assets.xcassets */,
 				25B6353220CC706600C0B13D /* Info.plist */,
+				AA5F778520D851BF0076CABB /* awsconfiguration.json */,
 				AAE56BBF20CE245C00E1859E /* Calculator.storyboard */,
 			);
 			path = SportsBetting;
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5F778620D851BF0076CABB /* awsconfiguration.json in Resources */,
 				25B6353120CC706600C0B13D /* LaunchScreen.storyboard in Resources */,
 				AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */,
 				D717A7F420D2EB0F0081A260 /* Assets.xcassets in Resources */,
@@ -375,6 +379,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SportsBetting/Pods-SportsBetting-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -386,6 +397,13 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",

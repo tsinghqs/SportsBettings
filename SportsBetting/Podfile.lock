@@ -1,4 +1,19 @@
 PODS:
+  - AWSAuthCore (2.6.21):
+    - AWSCore (= 2.6.21)
+  - AWSAuthUI (2.6.21):
+    - AWSAuthCore (= 2.6.21)
+    - AWSCore (= 2.6.21)
+  - AWSCognitoIdentityProvider (2.6.21):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.21)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.21)
+  - AWSMobileClient (2.6.21):
+    - AWSAuthCore (= 2.6.21)
+  - AWSUserPoolsSignIn (2.6.21):
+    - AWSAuthCore (= 2.6.21)
+    - AWSCognitoIdentityProvider (= 2.6.21)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -27,6 +42,9 @@ PODS:
   - TextFieldEffects (1.4.0)
 
 DEPENDENCIES:
+  - AWSAuthUI
+  - AWSMobileClient
+  - AWSUserPoolsSignIn
   - FacebookCore
   - FacebookLogin
   - FacebookShare
@@ -34,6 +52,13 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
     - Bolts
     - FacebookCore
     - FacebookLogin
@@ -44,6 +69,13 @@ SPEC REPOS:
     - TextFieldEffects
 
 SPEC CHECKSUMS:
+  AWSAuthCore: f912e4f032092818ee21860a44386c485329a92b
+  AWSAuthUI: 8549f06975c03b653e45623f19d4cb34f16f2e8f
+  AWSCognitoIdentityProvider: 1f724c5e43528580cd9f60f0a1290888793ed473
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: a1ff1d32ea7af235fe64be301c204b34cb1f9f83
+  AWSMobileClient: f61ef1ca52cf561a3831f4c29b8bfc43234db8f3
+  AWSUserPoolsSignIn: 5c2a162e62cdcb47fb0f3f5ede4dec492fc00307
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FacebookCore: 33078ef1d7d76b73f7e8c990dca7d3ea6db8d22f
   FacebookLogin: 6f15bf4fefd7a8865abbfa8fcd7f3dfd87aa275f
@@ -53,6 +85,6 @@ SPEC CHECKSUMS:
   FBSDKShareKit: 1869cb24db2cea90666a50cb9d568deb38e2d16e
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: f86c9b036d420eb1babf26fccedec3b1a35c8491
+PODFILE CHECKSUM: 8b4f6933aec19ed32575a0bb848cb2199eb4d139
 
 COCOAPODS: 1.5.3
