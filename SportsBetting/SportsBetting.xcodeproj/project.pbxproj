@@ -17,8 +17,10 @@
 		AAE56BC020CE245C00E1859E /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE56BBF20CE245C00E1859E /* Calculator.storyboard */; };
 		AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */; };
 		ACA1E8013C1DA2ED8A899A57 /* Pods_SportsBettingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199565B0174C0135333E169 /* Pods_SportsBettingTests.framework */; };
-		BDC410E59868651769EB5FD5 /* Pods_SportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C3376B3EF86C9F927C0219 /* Pods_SportsBetting.framework */; };
 		D717A7F420D2EB0F0081A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D717A7F320D2EB0D0081A260 /* Assets.xcassets */; };
+		D717A7F620D2F04F0081A260 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717A7F520D2F04F0081A260 /* ExploreViewController.swift */; };
+		D717A7F820D2F2590081A260 /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717A7F720D2F2590081A260 /* WorldCup.swift */; };
+		D717A7FA20D3271E0081A260 /* WorldCupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717A7F920D3271E0081A260 /* WorldCupCell.swift */; };
 		D71F549C20D0736100C4CD05 /* LogInSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */; };
 		D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */; };
 		D71F54A020D08CFC00C4CD05 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F549F20D08CFC00C4CD05 /* DesignableView.swift */; };
@@ -66,6 +68,9 @@
 		AAE56BC120D1BB0400E1859E /* Calculator_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_ViewController.swift; sourceTree = "<group>"; };
 		BC38DF4A6C1498DB1D8A3572 /* Pods-SportsBettingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsBettingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportsBettingTests/Pods-SportsBettingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D717A7F320D2EB0D0081A260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D717A7F520D2F04F0081A260 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		D717A7F720D2F2590081A260 /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
+		D717A7F920D3271E0081A260 /* WorldCupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupCell.swift; sourceTree = "<group>"; };
 		D71F549B20D0736100C4CD05 /* LogInSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInSignUp.storyboard; sourceTree = "<group>"; };
 		D71F549D20D0878200C4CD05 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
 		D71F549F20D08CFC00C4CD05 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
@@ -188,6 +193,9 @@
 				D71F549F20D08CFC00C4CD05 /* DesignableView.swift */,
 				D71F54A220D0950D00C4CD05 /* LogInViewController.swift */,
 				D71F54A420D0951800C4CD05 /* SignUpViewController.swift */,
+				D717A7F520D2F04F0081A260 /* ExploreViewController.swift */,
+				D717A7F920D3271E0081A260 /* WorldCupCell.swift */,
+				D717A7F720D2F2590081A260 /* WorldCup.swift */,
 			);
 			path = LogInSignUp;
 			sourceTree = "<group>";
@@ -367,10 +375,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SportsBetting/Pods-SportsBetting-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,9 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D71F54A520D0951800C4CD05 /* SignUpViewController.swift in Sources */,
+				D717A7FA20D3271E0081A260 /* WorldCupCell.swift in Sources */,
+				D717A7F820D2F2590081A260 /* WorldCup.swift in Sources */,
 				D71F54A020D08CFC00C4CD05 /* DesignableView.swift in Sources */,
 				25B6352920CC706600C0B13D /* ViewController.swift in Sources */,
 				25B6352720CC706600C0B13D /* AppDelegate.swift in Sources */,
+				D717A7F620D2F04F0081A260 /* ExploreViewController.swift in Sources */,
 				D71F54A320D0950D00C4CD05 /* LogInViewController.swift in Sources */,
 				D71F549E20D0878200C4CD05 /* LogInSignUpViewController.swift in Sources */,
 				AAE56BC220D1BB0400E1859E /* Calculator_ViewController.swift in Sources */,
